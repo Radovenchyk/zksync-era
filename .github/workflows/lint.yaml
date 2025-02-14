@@ -111,6 +111,8 @@ jobs:
             core -> target
             prover -> target
             zkstack_cli -> target
+          key: "common-shared"
+          # save-if: ${{ github.ref_name == github.event.repository.default_branch }}
 
       - name: Set Node.js
         uses: actions/setup-node@v4
